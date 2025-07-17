@@ -8,6 +8,28 @@
     /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        /* Top banner */
+    .top-banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #e76c29; /* Blue banner */
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .top-banner img {
+      height: 50px;
+      width: auto;
+    }
+
     /* Center everything */
     body {
       display: flex;
@@ -19,6 +41,7 @@
       font-family: Arial, sans-serif;
       color: #333;
       text-align: center;
+      padding-top: 60px;
     }
 
     /* Paint-roller container, now vertical stack */
@@ -85,6 +108,10 @@
   </style>
 </head>
 <body>
+  <div class="top-banner">
+    <img src="OrtasLogo.png" alt="Orta's Painting Logo">
+  </div>
+
   <div class="paint-roller">
     <div class="roller-cylinder"></div>
     <div class="roller-frame"></div>
